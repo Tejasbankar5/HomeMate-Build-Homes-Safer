@@ -1,0 +1,224 @@
+.aadhaar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #15242f, #ffffff);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+  }
+  
+  .step-header {
+    color: #4f46e5;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .step-subtext {
+    color: #334155;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-floating {
+    position: relative;
+    margin-bottom: 1.2rem;
+  }
+  
+  .input-floating input {
+    width: 100%;
+    padding: 1rem 0.75rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #94a3b8;
+    border-radius: 10px;
+    outline: none;
+    background: #f1f5f9;
+  }
+  
+  .input-floating label {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+    background: #f1f5f9;
+    padding: 0 0.25rem;
+    font-size: 0.85rem;
+    color: #475569;
+    transition: 0.2s;
+  }
+  
+  .input-floating input:focus + label,
+  .input-floating input:not(:placeholder-shown) + label {
+    top: -0.6rem;
+    left: 0.6rem;
+    font-size: 0.75rem;
+    color: #2563eb;
+    background: #e2e8f0;
+  }
+  
+  .verify-btn {
+    width: 100%;
+    background: #1e3a8a;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .verify-btn:hover {
+    background: #2563eb;
+  }
+  
+  .otp-section {
+    margin-top: 1.5rem;
+  }
+  
+  .otp-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .otp-box {
+    width: 2.5rem;
+    height: 2.8rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+  }
+  
+  .otp-info {
+    font-size: 0.9rem;
+    color: #475569;
+  }
+  
+  .otp-timer {
+    color: #ef4444;
+    font-weight: 500;
+  }
+  
+  .resend-link {
+    color: #2563eb;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .verified-banner {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 0.75rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  .upload-section {
+    margin-top: 2rem;
+  }
+  
+  .upload-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #334155;
+  }
+  
+  .upload-section input[type="file"] {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 0.75rem;
+    background: #f8fafc;
+  }
+  .upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .upload-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    background: #f0f0f0;
+  }
+  
+  .upload-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+  }
+  
+  .upload-btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+    transform: none;
+  }
+  

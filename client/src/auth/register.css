@@ -1,0 +1,215 @@
+.register-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0e172b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+  }
+  
+  .register-box {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 600px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    animation: slideFade 0.8s ease-out;
+  }
+  
+  .image-side {
+    flex: 1.5;
+    background-image: url('service.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form-side {
+    flex: 1.2;
+    padding: 50px;
+    background-color: #f9fbff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #141e30;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .form-side h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222f3e;
+    text-align: center;
+  }
+  
+  .form-side input {
+    background: #f0f4ff;
+    border: 2px solid #d6e0f5;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-side input:focus {
+    border-color: #121a28;
+    background: #ffffff;
+    outline: none;
+  }
+  
+  .form-side input::placeholder {
+    color: #7a8aa1;
+  }
+  
+  .primary-btn {
+    padding: 14px;
+    background-color: #19233a;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(46, 109, 223, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background-color: #1f5ad1;
+    transform: translateY(-2px);
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 2px solid #d6e0f5;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .google-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .google-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #dcdcdc;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .login-link a {
+    color: #2e6ddf;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes slideFade {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .register-box {
+      flex-direction: column;
+    }
+  
+    .image-side {
+      height: 200px;
+    }
+  
+    .form-side {
+      padding: 30px 20px;
+    }
+  
+    .form-side h2 {
+      font-size: 20px;
+    }
+  
+    .form-side input,
+    .form-side button,
+    .google-btn {
+      font-size: 14px;
+    }
+  }
+  
